@@ -44,8 +44,9 @@ public final class Einstein {
             double mass = Double.parseDouble(massString);
             if (mass > 0) {
                 double energy = mass * Math.pow(SPEED_OF_LIGHT, 2);
+                final String energyString = String.format("%.3e", energy);
                 System.out.println("The energy released by your object"
-                + "moving at the speed of light is " + energy + "J");
+                + "moving at the speed of light is " + energyString + "J");
             } else {
                 System.out.println("Please enter a positive mass");
             }
